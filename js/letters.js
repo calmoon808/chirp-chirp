@@ -17,10 +17,10 @@ var counter = {
 
 function countLetters(counter, sample_text){
   // FIX ME
-  sample_text = sample_text.toLowerCase();
   if (sample_text.length === 0){
     return counter;
   }
+  sample_text = sample_text.toLowerCase();
   let char = sample_text.charAt(0);
   if (char in counter){
     counter[char]++;
